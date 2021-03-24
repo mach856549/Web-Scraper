@@ -50,7 +50,6 @@ def response_handler1(response_local):
             title = article.find("a").text
             url = article.find("a").get('href')
             response_article(user_url + url, title)
-            #I now have a list of links and titles for each "News" article on the page
     else:
         error_handle()
 
